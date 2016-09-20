@@ -33,7 +33,11 @@ Route::resource('/test/test','test1\testController');
 
 Route::resource('/test/finalizado','test1\finalizadoController');
 
-
+//---------------------------Juego asteriodes
+Route::get('/juegos/asteroides', function()
+{
+	return View::make('juegos/asteroides');
+});
 
 // --------------------------------------------------------------------------
 Route::get('/tables', function()

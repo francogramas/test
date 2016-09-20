@@ -23,6 +23,8 @@ $(function() {
         if (height < 1) height = 1;
         if (height > topOffset) {
             $("#page-wrapper").css("min-height", (height) + "px");
+            $("#page-wrapper1").css("min-height", (height) + "px");
+
         }
     });
 
