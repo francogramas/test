@@ -6,6 +6,7 @@ use test\User;
 use Validator;
 use test\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use test\models\general\pais;
 
 class RegisterController extends Controller
 {
@@ -37,6 +38,7 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+        
     }
 
     /**

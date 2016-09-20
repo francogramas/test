@@ -17,7 +17,7 @@ class CreateSubcategoriaTable extends Migration
         {
             $table->increments('id');
             $table->timestamps();
-            $table->string('nombre',45)->unique();     
+            $table->string('nombre',120)->unique();     
             $table->integer('categoria_id')->unsigned()->index();
 
             $table->foreign('categoria_id')->references('id')->on('categoria');

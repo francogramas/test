@@ -18,10 +18,10 @@ class CreateEvaluacionrespuestasTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->integer('evaluacion_id')->unsigned()->index();            
-            $table->integer('respueta_id')->unsigned()->index();
+            $table->integer('respuesta_id')->unsigned()->index();
 
             $table->foreign('evaluacion_id')->references('id')->on('evaluacion');
-            $table->foreign('respueta_id')->references('id')->on('respuestas');        
+            $table->foreign('respuesta_id')->references('id')->on('respuestas');        
         });
     }
 

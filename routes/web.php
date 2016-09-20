@@ -12,7 +12,7 @@
 */
 
 //Route::get('/','almacen\almacenController@home');
-//Route::resource('/terceros','almacen\terceros');
+Route::resource('/terceros','tercerosController');
 
 // Buscar Producto
 //Route::get('buscar/producto', 'almacen\productosController@autocomplete');
@@ -26,6 +26,13 @@ Route::resource('/empresa','general\empresaController');
 Route::resource('/pais','general\pais');
 Route::get('/departamentos/{id}','general\estadosController@getEstados');
 Route::get('/ciudades/{id}','general\ciudadesController@getCiudades');
+//---------------------Introduccion al test
+Route::resource('/test/introduccion','test1\introduccionController');
+Route::resource('/test/prueba','test1\pruebaController');
+Route::resource('/test/test','test1\testController');
+
+Route::resource('/test/finalizado','test1\finalizadoController');
+
 
 
 // --------------------------------------------------------------------------
@@ -104,3 +111,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

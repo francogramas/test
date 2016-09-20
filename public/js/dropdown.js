@@ -46,6 +46,14 @@ $(document).ready(function(){
     });
   });
 
+  
+  $('.respuestas').hover(function() {
+    var respuesta_id= $(this).attr("value");
+    $("#respuesta_id").val(respuesta_id);
+  }, function() {
+    /* Stuff to do when the mouse leaves the element */
+  });
+
   $('.btn-delete').click( function(e){
     e.preventDefault();
     var row = $(this).parents('tr');

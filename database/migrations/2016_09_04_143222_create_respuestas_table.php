@@ -17,7 +17,7 @@ class CreateRespuestasTable extends Migration
         {
             $table->increments('id');
             $table->timestamps();
-            $table->string('nombre');
+            $table->string('respuesta');
             $table->integer('puntaje')->unsigned(); 
             $table->integer('pregunta_id')->unsigned()->index();
 

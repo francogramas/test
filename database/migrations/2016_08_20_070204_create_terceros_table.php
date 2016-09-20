@@ -23,8 +23,10 @@ class CreateTercerosTable extends Migration {
 			$table->string('correo',45);
 			$table->string('telefono',45);
 			$table->integer('ciudad')->unsigned()->index();
+			$table->integer('user_id')->unsigned()->index();			
 			
 			$table->foreign('ciudad')->references('id')->on('ciudades');
+			$table->foreign('user_id')->references('id')->on('users');			
 		});
 	}
 

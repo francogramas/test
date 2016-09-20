@@ -8,11 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Laravel</title>
+    <title>Test Caper1</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset("assets/stylesheets/themes/base/jquery-ui.css") }}" />    
+    <link rel="stylesheet" href="{{ asset("assets/stylesheets/styles.css") }}" />
+    <link rel="stylesheet" href="{{ asset("assets/stylesheets/estilos.css") }}" />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -21,6 +24,7 @@
     </script>
 </head>
 <body>
+<div id="wrapper">
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -35,7 +39,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                    Test Caper1
                 </a>
             </div>
 
@@ -50,7 +54,7 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a href="{{ url('/register') }}">Nuevo Usuario</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -75,11 +79,27 @@
                 </ul>
             </div>
         </div>
-    </nav>
-
-    @yield('content')
-
+    </nav>    
+     <div id="page-wrapper">
+             <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">@yield('page_heading')</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+           </div>
+            <div class="row">
+                @include('partials.message')
+                @yield('content')
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+    
+</div>
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    
+    {!! Html::script('assets/scripts/jquery-ui.min.js') !!}
+    {!! Html::script('js/dropdown.js') !!}
+
 </body>
 </html>
