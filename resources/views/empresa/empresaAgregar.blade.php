@@ -1,8 +1,10 @@
 @extends('layouts.app')
 @section('page_heading','Datos de la empresa')
 @section('content')
+
 {!! Form::open(['route' => 'empresa.store','method'=>'POST']) !!}
 {!! Form::hidden('user_id',$user_id,['id'=>'user_id']) !!}
+{{ csrf_field() }}
 	<div class="row">
 		<div class="col-sm-6">
 			<div class="form-group">

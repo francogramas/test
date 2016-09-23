@@ -4,6 +4,7 @@
 
 {!! Form::open(['route' => 'introduccion.store','method'=>'POST']) !!}
 {!! Form::hidden('etapa_id',$etapa,['id'=>'etapa_id']) !!}
+{{ csrf_field() }}
 	<style type="text/css" media="screen">
 		.preguntas{
 			font-family: 'Shadows Into Light Two', cursive; font-size:16px; 

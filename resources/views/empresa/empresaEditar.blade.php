@@ -4,6 +4,7 @@
 {!! Form::open(['route' => 'empresa.store','method'=>'POST']) !!}
 	{!! Form::hidden('id',$empresa1{'id'},['id'=>'id']) !!}
 	{!! Form::hidden('user_id',$user_id,['id'=>'user_id']) !!}
+	{{ csrf_field() }}
 
 	
 	<div class="row">

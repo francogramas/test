@@ -4,7 +4,7 @@
 
 {!! Form::open(['route' => 'terceros.store','method'=>'POST']) !!}
 {!! Form::hidden('user_id',$user{'id'},['id'=>'user_id']) !!}
-
+{{ csrf_field() }}
     <section>
 		<div class="row">
 			<div class="col-sm-6">

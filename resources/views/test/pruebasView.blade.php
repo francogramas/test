@@ -5,6 +5,7 @@
 {!! Form::hidden('etapa_id',$etapa,['id'=>'etapa_id']) !!}
 {!! Form::hidden('user_id',$user_id,['id'=>'user_id']) !!}
 {!! Form::hidden('estado_id',1,['id'=>'estado_id']) !!}
+{{ csrf_field() }}
 
 	<style type="text/css" media="screen">		
 		.preguntas{
