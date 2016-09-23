@@ -18,6 +18,7 @@
 			padding-right: 100px;
 		}
 	</style>
+	 {{ csrf_field() }}	
 	<section class="preguntas" >
 		{{ $mensaje }}
 	</section>

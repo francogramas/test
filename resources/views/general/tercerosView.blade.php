@@ -2,6 +2,7 @@
 @section('page_heading','Datos Personales')
 @section('content')
 
+{{ csrf_field() }}
 {!! Form::open(['route' => 'terceros.store','method'=>'POST']) !!}
 {!! Form::hidden('user_id',$user{'id'},['id'=>'user_id']) !!}
 
