@@ -1584,17 +1584,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 100%;
   }
 }
 .container-fluid {
@@ -4068,7 +4068,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 90px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -8428,7 +8428,7 @@ box-shadow:         7px 7px 14px 0px rgba(147, 149, 152, 0.68);
 @media(min-width:768px) {
     #page-wrapper1 {
         position: inherit;
-        margin: 4% 15% 0 15%;
+        margin: 2% 15% 0 15%;
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
     }

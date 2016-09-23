@@ -2,21 +2,20 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-           <h3> Bievenido al test Caper1</h3>
+    <div class="row">        
+        <div class="col-sm-4">           
+           <img src="/images/logo_texto.png" alt="" width="100%">
+           <img src="/images/fondoEmprender.png" alt="" width="100%">                      
         </div>
         <div class="col-sm-4">
-            <h3>Informacion de Apoyo-Logos</h3>
-        </div>
+           <img src="/images/logo_sena.png" alt="" width="100%">                       
+        </div>       
         <div class="col-sm-4">
-              <div">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                        {{ csrf_field() }}
-
+                    <form  role="form" method="POST" action="{{ url('/login') }}">
+                        {{ csrf_field() }}                    
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">                            
                             <div class="col-md-10">
                             <label for="email" class="control-label">Correo Electrónico</label>
@@ -72,13 +71,7 @@
                     </form>
                 </div>
             </div>
-        </div>
-        </div>          
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <h4>Si hay algo mas que infomar va acá</h4>    
-        </div>        
-    </div>
+        </div>     
+    </div>          
 </div>
 @endsection

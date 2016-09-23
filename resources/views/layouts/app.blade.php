@@ -8,14 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Test Caper1</title>
-
+    <title>Test Capere.1</title>    
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset("assets/stylesheets/themes/base/jquery-ui.css") }}" />    
     <link rel="stylesheet" href="{{ asset("assets/stylesheets/styles.css") }}" />
     <link rel="stylesheet" href="{{ asset("assets/stylesheets/estilos.css") }}" />
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -39,7 +39,12 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Test Caper1
+                <table>
+                    <tr>                    
+                        <td><img src="/images/logoPeq.png" alt=""></td>
+                        <td><h3>Test Capere.1</h3> </td>
+                    </tr>
+                </table>
                 </a>
             </div>
 
