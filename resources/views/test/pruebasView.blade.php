@@ -56,7 +56,8 @@
 			
 		}
 	</style>
-	</style>
+	
+	 {{ csrf_field() }}
 	<section class="preguntas" >
 		{{ $pregunta }}
 	</section>
