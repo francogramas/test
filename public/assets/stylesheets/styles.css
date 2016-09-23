@@ -8392,7 +8392,8 @@ button.close {
  */
 
 body {
-    background-color: #f8f8f8;
+    
+    background-color: rgba(73, 98, 255, 0.46);
 }
 
 #wrapper {
@@ -8418,12 +8419,16 @@ body {
     padding: 0 15px;
     min-height: 568px;
     background-color: #fff;
+    border-radius: 50px;
+-webkit-box-shadow: 7px 7px 14px 0px rgba(147, 149, 152, 0.68);
+-moz-box-shadow:    7px 7px 14px 0px rgba(147, 149, 152, 0.68);
+box-shadow:         7px 7px 14px 0px rgba(147, 149, 152, 0.68);
 }
 
 @media(min-width:768px) {
     #page-wrapper1 {
         position: inherit;
-        margin: 0 0 0 50px;
+        margin: 4% 15% 0 15%;
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
     }

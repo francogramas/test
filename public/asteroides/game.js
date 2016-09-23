@@ -960,7 +960,7 @@ for (var sfx in SFX) {
           audio.play();
         } else {
           audio.muted = false;
-          audio.currentTime = 0;
+          audio.currentTime = 100;
         }
       }
       return audio;

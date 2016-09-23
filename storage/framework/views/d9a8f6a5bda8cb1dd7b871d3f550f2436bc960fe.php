@@ -53,7 +53,8 @@
 			
 		}
 	</style>
-	
+	 <?php echo e(csrf_field()); ?>
+
 	<?php echo Form::hidden('user_id',$user_id,['id'=>'user_id']); ?>
 
 	<?php echo Form::hidden('evaluacion_id',$evaluacion_id,['id'=>'evaluacion_id']); ?>

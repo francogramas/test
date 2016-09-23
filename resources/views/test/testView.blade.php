@@ -53,7 +53,7 @@
 			
 		}
 	</style>
-	
+	 {{ csrf_field() }}
 	{!! Form::hidden('user_id',$user_id,['id'=>'user_id']) !!}
 	{!! Form::hidden('evaluacion_id',$evaluacion_id,['id'=>'evaluacion_id']) !!}
 	{!! Form::hidden('estado_id',$estado_id,['id'=>'estado_id']) !!}
